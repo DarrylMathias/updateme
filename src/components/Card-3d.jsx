@@ -4,9 +4,11 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { HStack, Badge } from "@chakra-ui/react";
 import { BorderBeam } from "@/components/magicui/border-beam";
+import { a } from "framer-motion/client";
 
 export default function Card_3d(props) {
   return (
+    <a href={props.url}>
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-[550px] rounded-xl p-4 border flex flex-col">
         <CardItem
@@ -45,5 +47,6 @@ export default function Card_3d(props) {
       </CardBody>
       <BorderBeam duration={8} size={100} />
     </CardContainer>
+    </a>
   );
 }

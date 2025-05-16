@@ -43,7 +43,7 @@ function App() {
         {/* Main Content Container */}
         <div className="relative z-20 flex flex-col w-full min-h-screen">
           <Flex justify="space-between" align="center" m={10}>
-            <Heading fontSize={["3xl","5xl","5xl","6xl"]} fontWeight={700}>
+            <Heading fontSize={["4xl","5xl","5xl","6xl"]} fontWeight={700}>
               <AuroraText speed={2}>UpdateMe</AuroraText>
             </Heading>
             <ColorModeButton />
