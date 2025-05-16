@@ -10,6 +10,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import Spin from "./Spin";
 import { AuroraText } from "@/components/magicui/aurora-text";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [news, setNews] = useState([]);
@@ -94,6 +95,7 @@ function App() {
             )}
           </TracingBeam>
         </div>
+        <Analytics />
       </div>
     </>
   );
